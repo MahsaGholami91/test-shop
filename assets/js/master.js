@@ -306,23 +306,23 @@ $(document).ready(function() {
 
         /////////////////////////////////////////////////////////////////////////////////////////////////////////
         // modal_style2
-        $(document.body).on('click','.share_style1 .item1_bustani.email,.share_style2 .icon1.email',function(e){
-            e.preventDefault();
-            $('.close_icon').trigger('click');
-            var $this=$(this);
-            setTimeout(function () {
-                show_modal('.bg1');
-                $('#frm_share').find('input[name="id"]').val($this.data('id'));
-                $('#frm_share').find('input[name="model"]').val($this.data('model'));
-                $('#frm_share').find('input[name="image_size"]').val($this.data('image-size'));
-                $('.modal_style2.email_share').addClass('bounce');
-                modal_box('#popup_box3');
-            },300);
-        });
-        $('.modal_style2.email_share .close_icon').click(function(){
-            hide_modal('.bg1');
-            $('.modal_style2').fadeOut();
-        });
+        // $(document.body).on('click','.share_style1 .item1_bustani.email,.share_style2 .icon1.email',function(e){
+        //     e.preventDefault();
+        //     $('.close_icon').trigger('click');
+        //     var $this=$(this);
+        //     setTimeout(function () {
+        //         show_modal('.bg1');
+        //         $('#frm_share').find('input[name="id"]').val($this.data('id'));
+        //         $('#frm_share').find('input[name="model"]').val($this.data('model'));
+        //         $('#frm_share').find('input[name="image_size"]').val($this.data('image-size'));
+        //         $('.modal_style2.email_share').addClass('bounce');
+        //         modal_box('#popup_box3');
+        //     },300);
+        // });
+        // $('.modal_style2.email_share .close_icon').click(function(){
+        //     hide_modal('.bg1');
+        //     $('.modal_style2').fadeOut();
+        // });
         // modal_style1
 
         ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -337,26 +337,28 @@ $(document).ready(function() {
         
         ////////////////////////////////////////////////////////////////////////////
         // submenu     
-        $('.nav_style3 .item1_bustani').hover(function(){
-            $(this).find('.submenu').fadeIn(50).addClass('hovered');
-        },(function(){
-            $(this).find('.submenu').fadeOut(50).removeClass('hovered');
-        }));// submenu
+        // $('.nav_style3 .item1_bustani').hover(function(){
+        //     $(this).find('.submenu').fadeIn(50).addClass('hovered');
+        // },(function(){
+        //     $(this).find('.submenu').fadeOut(50).removeClass('hovered');
+        // }));
+        // submenu
         
         ///////////////////////////////////////////////////////////////////
         // responsive panel menu
-        $('.panel_style1 .menu1 .item1_bustani.user.responsive').click(function(){
-           $('.panel_style1 .panel_part2 .leftside.responsive_menu1').fadeIn();
-        });
+        // $('.panel_style1 .menu1 .item1_bustani.user.responsive').click(function(){
+        //    $('.panel_style1 .panel_part2 .leftside.responsive_menu1').fadeIn();
+        // });
 
-        $('.leftside.responsive_menu1').click(function(e){
-           e.stopPropagation();
-        });
+        // $('.leftside.responsive_menu1').click(function(e){
+        //    e.stopPropagation();
+        // });
 
-        $('body').click(function(){
-            $('.sub').fadeOut(10);
-            $('.panel_style1 .panel_part2 .leftside.responsive_menu1').fadeOut(10);
-        });// responsive panel menu
+        // $('body').click(function(){
+        //     $('.sub').fadeOut(10);
+        //     $('.panel_style1 .panel_part2 .leftside.responsive_menu1').fadeOut(10);
+        // });
+        // responsive panel menu
         
         ////////////////////////////////////////////////////////////////////////////
         // fixed menu

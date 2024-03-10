@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="owl.css">
     <link rel="stylesheet" href="css.css">
-
     <style type="text/css" class="drift-base-styles">
         @keyframes noop {
           0% { zoom: 1; }
@@ -57,22 +56,117 @@
           position: absolute;
           pointer-events: none;
         }
-    </style>
-       
-   
-                
-            <link href="assets/css/master.css?v=1591956123" rel="stylesheet" type="text/css">
-            <!--media style-->
-            <link href="assets/css/media.css?v=1591956123" rel="stylesheet" type="text/css">
+    </style>               
+    <link href="assets/css/master.css?v=1591956123" rel="stylesheet" type="text/css">
+    <link href="assets/css/media.css?v=1591956123" rel="stylesheet" type="text/css">
     
-      
-           <!-- <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
+    <!-- <style>
         
-                gtag('config', 'UA-112920667-1');
-            </script> -->
+
+.mobile-container {
+    margin: auto;
+    background-color: #555;
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav i {
+    cursor: pointer;
+}
+
+.menu-tab .active {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.mobile-hidden {
+    display: block;
+}
+
+.logo-mobile a {
+    color: #fff;
+}
+
+.mobile-menu {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #000000d9;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    display: none;
+}
+
+.mobile-menu i {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: red;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.mobile-menu li a {
+    color: #fff;
+    font-size: 24px;
+}
+
+.mobile-menu li {
+    color: #fff;
+    padding: 15px;
+}
+
+.mobile-menu ul {
+    padding: 30%
+}
+
+hr {
+    width: 5%;
+    color: gray;
+}
+
+    </style>
+       -->
 
 </head>
 <body>
@@ -114,25 +208,88 @@
                     </div>
                 </div>
             <!-- hamMenu -->
-                <div class="mobile-container">
-
-                    <div class="topnav">
-                    <a href="#home" class="active">Logo</a>
-                    <div id="myLinks">
-                           
+            <!-- <div class="mobile-container hidden">
+                <div class="topnav">
+                    <div class="logo-mobile">
+                        <a href="index.html">V<span class="v-color">N</span>EWS</a>
                     </div>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                    </div>
-                    
-                  
-                    
+                    <span onclick="hamMenu()" class="material-symbols-outlined">  menu  </span>
                 </div>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu">
+                <span onclick="hamMenu()" class="material-symbols-outlined"> close </span>
+                <ul>
+                    <li class="main_menu">
+                        <a class="main_menu_text" href="index.html">Home</a>
+                    </li>
+                    <hr>
+                    <li class="main_menu">
+                        <a lass="main_menu_text" href="news.html">News</a>
+                    </li>
+                    <hr>
+                    <li class="main_menu">
+                        <a class="main_menu_text dropdown-btn" href="sitemap.html">Sitemap</a>
+                   </li>
+                </ul>
+            </div>
+            <div class="top-wide hidden-mobile">
+                <nav class="top">
+                    <div class="left">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="sitemap.html">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a> </li>
+                            <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="body">
+                <div class="logo hidden-mobile">
+                    <a href="index.html">V<span class="v-color">N</span>EWS</a>
+                </div>
+                <div class="ads-banner">
+                    <img src="image/voice_banner.png" alt="">
+                </div>
+            </div> -->
+            <!-- Simulate a smartphone / tablet -->
+            <!-- <div class="bottom hidden-mobile">
+                <nav class="menu">
+                    <div class="left">
+                        <ul class="main_navigation">
+                            <li class="main_menu">
+                                <a class="main_menu_text" href="index.html">Home</a>
+                            </li>
+                            <li class="main_menu ">
+                                <a class="main_menu_text " href="news.html">News</a>
+                            </li>
+                            <li class="main_menu">
+                                <a lass="main_menu_text" href="sitemap.html">Sitemap</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="searchbox">
+                        <form class="search-form" action="news.html" method="">
+                            <input class="search-input" name="s" size="20" type="text" value=""
+                                placeholder="Type here to search...">
+                            <button class="search-btn" type="submit">
+                                <i class="fa fa-search"></i>
+
+                            </button>
+                        </form>
+                    </div>
+                </nav>
+            </div> -->
     
-
-
-
             <!-- hamMenu -->
 
 
@@ -303,20 +460,20 @@
                                         <div class="bigpic">
                                             <img class="drift-demo-trigger" src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_3.jpg" alt="" data-zoom="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_3.jpg">
                                         </div>
-                                        <!-- bigpic -->
+                                        
                                         <div class="thumb_part clearfix">
                                             <div class="pic active">
                                                 <img src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_1.jpg" alt="" data-bigpic-url="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_1.jpg" data-zoompic-url="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_1.jpg">
-                                            </div><!-- pic -->
+                                            </div>
                                             <div class="pic">
                                                 <img src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_2.jpg" alt="" data-bigpic-url="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_2.jpg" data-zoompic-url="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_2.jpg">
-                                            </div><!-- pic -->
+                                            </div>
                                             <div class="pic">
                                                 <img src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_3.jpg" alt="" data-bigpic-url="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_3.jpg" data-zoompic-url="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_3.jpg">
-                                            </div><!-- pic -->
-                                        </div><!-- thumb_part -->
-                                    </div><!-- pic_style1 -->
-                                </div><!--leftside-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>                     
@@ -1205,7 +1362,7 @@
     <section class="footer">
         <div class="container">
             <div class="row">
-                <div class="part1 col-md-3 d-flex flex-column">
+                <div class="part1 col-md-3 d-flex flex-column col-sm-12 text-sm-center">
                     <div class="first d-flex flex-column">
                         <div class="title">Trendyol</div>
                         <div class="list d-flex flex-column">
@@ -1225,7 +1382,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="part2 col-md-3">
+                <div class="part2 col-md-3 col-sm-12 text-sm-center">
                     <div class="first d-flex flex-column">
                         <div class="title">About Us</div>
                         <div class="list d-flex flex-column">
@@ -1246,7 +1403,7 @@
                     </div>
     
                 </div>
-                <div class="part3  col-md-3">
+                <div class="part3  col-md-3 col-sm-12 text-sm-center">
                     <div class="first d-flex flex-column">
                         <div class="title">Kampanya</div>
                         <div class="list d-flex flex-column">
@@ -1266,7 +1423,7 @@
                         </div>
                     </div>    
                 </div>
-                <div class="part4  col-md-3">
+                <div class="part4  col-md-3 col-sm-12 text-sm-center">
                     <div class="first d-flex flex-column">
                         <div class="title">Yardim</div>
                         <div class="list d-flex flex-column">
@@ -1291,56 +1448,8 @@
         </div>
     </section>
 
-    <script>
-        const imgs = document.querySelectorAll('.img-select a');
-        const imgBtns = [...imgs];
-        let imgId = 1;
-        imgBtns.forEach((imgItem) => {
-            imgItem.addEventListener('click', (event) => {
-                event.preventDefault();
-                imgId = imgItem.dataset.id;
-                slideImage();
-            });
-        });
-        function slideImage(){
-            const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
-            document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
-        }
-        window.addEventListener('resize', slideImage);
-    </script>
 
-    <!-- <script>
-        var options = {
-            width: 400,
-            zoomWidth: 500,
-            offset: {vertical: 0, horizontal: 10}
-        };
-        new ImageZoom(document.getElementById("img-container"), options);
 
-        var options2 = {
-            width: 400,
-            zoomWidth: 500,
-            offset: {vertical: 0, horizontal: 10}
-        };
-        new ImageZoom(document.getElementById("img-container2"), options2);
-
-        var options3 = {
-            width: 400,
-            zoomWidth: 500,
-            offset: {vertical: 0, horizontal: 10}
-        };
-        new ImageZoom(document.getElementById("img-container3"), options3);
-        
-        var options4 = {
-            width: 400,
-            zoomWidth: 500,
-            offset: {vertical: 0, horizontal: 10}
-        };
-        new ImageZoom(document.getElementById("img-container4"), options4);
-    
-    </script> -->
-
-<!-- <script src="magnify.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="owl.js"></script>
@@ -1374,213 +1483,94 @@
         document.onclick = jsddm_close;
     </script>
 
-    <!-- <script>
-        
-    thumbnails = document.querySelectorAll(".thumbnail"),
-    replacePicture = document.querySelector("#picture"),
-    currentPicture = document.querySelector(".picture-div"),
-    productInfo = document.querySelector(".productInfo")
-    thumbnails.forEach(thumbnail => {
-    thumbnail.addEventListener("click" ,()=>{
-        replacePicture.src = thumbnail.src;
-        output.style.backgroundImage = "url('" + thumbnail.src + "')";
-    });
 
-});
-
-
-const imageZoom = (picID , outputID) => {
-    const moveLens = (e) => {
-        let pos, x, y;
-        e.preventDefault();
-
-
-        pos = getCursorPos(e);
-        
-        x = pos.x - (lens.offsetWidth / 2);
-        y = pos.y - (lens.offsetHeight / 2);
-        
-        
-        if( x > pic.Width - lens.offsetWidth) {
-            x = pic.Width - lens.offsetWidth  ;
-        }
-        if(x < 0) {
-            x = 0;
-        }
-        if( y > pic.height - lens.offsetHeight){
-            y = pic.height - lens.offsetHeight ;
-        }
-        if(y < 0) {
-            y = 0;
-        }
-        
-        lens.style.left = x + "px";
-        lens.style.top = y + "px";
-        
-        output.style.backgroundPosition = "-" + (x * x1) + "px -" + (y * y1)  + "px";
-        
-        output.style.backgroundSize = (pic.width * x1 )  + "px " + (pic.height * y1 )  + "px";
-        console.log(output.style.backgroundSize);
-
-    }
-    pic = document.getElementById(picID);
-    output = document.getElementById(outputID);
-
-    lens = document.createElement("DIV");
-    lens.setAttribute("class", "pic-zoom-lens");
-    pic.parentElement.insertBefore(lens,pic);
-
-    x1 = output.offsetWidth / lens.offsetWidth;
-    y1 = output.offsetHeight / lens.offsetHeight;
-
-
-    lens.addEventListener("mousemove", moveLens);
-    pic.addEventListener("mousemove",moveLens);
-
-    const getCursorPos=(e)=>{
-        let a, x=0 , y=0;
-        e=e || window.event;
-
-        a=pic.getBoundingClientRect();
-
-        x = e.pageX - a.left;
-        y = e.pageY - a.top;
-
-        x= x - window.scrollX;
-        y= y - window.scrollY;
-        return {x:x , y:y};
-    }
-
-    currentPicture.addEventListener("mouseenter" , ()=>{
-        lens.style.display = "block";
-        productInfo.style.display="none";
-        output.style.backgroundImage = "url('" + pic.src + "')";
-    });
-    currentPicture.addEventListener("mouseleave" , ()=>{
-        lens.style.display = "none";
-        productInfo.style.display="block";
-        output.style.backgroundImage = "url('')";
-    });
-
-}
-
-imageZoom("picture" , "pictureOutput");
-
-    </script> -->
-
-
-<!-- <script>
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-    </script> -->
-
-
-     <!-- Jquery Library -->
-     <script src="assets/js/jquery-1.11.1.min.js" type="text/javascript"></script> <!-- jquery library --><!-- Jquery Library -->
-    
-     <!-- Master Js -->
-     <script src="assets/js/master.js" type="text/javascript"></script> <!-- master --><!-- Master Js -->
-     
-     <!-- Animate -->
-     <link href="assets/css/animate.css" rel="stylesheet" type="text/css"> <!-- animate --><!-- Animate -->
-     
-     
-     
-     <!-- Ellipsis-->
-     <script src="assets/plugin/ellipsis/jquery.dotdotdot.min.js" type="text/javascript"></script> <!-- ellipsis --><!-- Ellipsis-->
-     
-     <!-- Nice select-->
-     <link href="assets/plugin/nice-select/css/custom.css" rel="stylesheet" type="text/css"> <!-- nice select -->
-     <script src="assets/plugin/nice-select/js/jquery.nice-select.min.js" type="text/javascript"></script> <!-- nice select --><!-- Nice select-->
-     
-     
-     
-     
-     
-     
-     
-         <!-- Zoom-->
-         <link rel="stylesheet" href="assets/plugin/drift-master/drift-basic.css">
-     <script src="assets/plugin/drift-master/Drift.js"></script>    <!-- Zoom-->
-     
-     <!-- Function-->
-     <script src="assets/js/functions.js" type="text/javascript"></script><!-- function --><!-- Function-->
-     <script src="assets/plugin/sweetalert/sweetalert.min.js" type="text/javascript"></script> <!-- cropper -->
+     <script src="assets/js/master.js" type="text/javascript"></script> 
+     <link href="assets/css/animate.css" rel="stylesheet" type="text/css"> 
+     <script src="assets/plugin/ellipsis/jquery.dotdotdot.min.js" type="text/javascript"></script> 
+     <link href="assets/plugin/nice-select/css/custom.css" rel="stylesheet" type="text/css">
+     <script src="assets/plugin/nice-select/js/jquery.nice-select.min.js" type="text/javascript"></script> 
+     <link rel="stylesheet" href="assets/plugin/drift-master/drift-basic.css">
+     <script src="assets/plugin/drift-master/Drift.js"></script>   
+     <script src="assets/js/functions.js" type="text/javascript"></script>
+     <script src="assets/plugin/sweetalert/sweetalert.min.js" type="text/javascript"></script>
      <script src="assets/js/Atlasweb.js"></script>
      <script src="assets/js/atlasweb.ctrl.js"></script>
-     
-     <!-- Page scripts -->
-     
-     
-     
-         <script>
-             $(document).ready(function(){
-     
-             ////////////////////////////////////////////////////////////////////
-             // nice select
-             $('select').niceSelect();
-             // end nice select
-     
-             //////////////////////////////////////////////////////////////
-             // //thumbnail pics
-             $('.pic_style1 .thumb_part .pic').click(function(){
-                 var $this=$(this);
-                 $('.pic_style1 .bigpic').animate({opacity:0.6},200,function () {
-                     $('.pic_style1 .thumb_part .pic').removeClass('active');
-                     $(this).addClass('active');
-                     var bigpic = $this.find('img').attr('data-bigpic-url');
-                     var zoompic = $this.find('img').attr('data-zoompic-url');
-                     $('.pic_style1 .bigpic').find('img').attr('src',bigpic).attr('data-zoom',zoompic);
-                     $('.pic_style1 .bigpic').animate({opacity:1});
-                 });
-     
-             });// //thumbnail pics
-     
-             //////////////////////////////////////////////////////////////
-             // //detail tabs
-             $('.product_detail_style1 .title3').click(function(){
-                 $(this).toggleClass('open');
-                 $(this).closest('.item1').find('.paragraph1').slideToggle(200);
-                 $(this).closest('.item1').find('.share_style2').slideToggle(200);
-             });// //detail tabs
-     
-             $('.product_detail_style1 .like1 .icon').click(function () {
-                 $(this).toggleClass('liked');
-             })
-     
-             //////////////////////////////////////////////////////////////
-             // zoom plugin
-             new Drift(document.querySelector('.drift-demo-trigger'), {
-                 paneContainer: document.querySelector('.product_detail_style1'),
-                 inlinePane: 900,
-                 containInline: true,
-                 hoverBoundingBox: true,
-                 zoomFactor: 3,
-                 inlineOffsetY: -85,
-             });
-     
-     
-                 $('.box_style1 .quick_view .text').click(function(){
-                     show_modal('.bg15');
-                     modal_box('#popup_box15',$(this));
-                 });
-                 $(document.body).on('click','.modal_style15 .close_icon',function(){
-                     hide_modal('.bg1');
-                     $('.modal_style15').fadeOut();
-                 });
-             // zoom plugin
-     
-             });//end document ready
-         </script>
-     
-     <!-- Page scripts -->
-     <script>
+         
+    <script>
+        $(document).ready(function(){
+
+        // nice select
+        $('select').niceSelect();
+        // end nice select
+
+        // //thumbnail pics
+        $('.pic_style1 .thumb_part .pic').click(function(){
+            var $this=$(this);
+            $('.pic_style1 .bigpic').animate({opacity:0.6},200,function () {
+                $('.pic_style1 .thumb_part .pic').removeClass('active');
+                $(this).addClass('active');
+                var bigpic = $this.find('img').attr('data-bigpic-url');
+                var zoompic = $this.find('img').attr('data-zoompic-url');
+                $('.pic_style1 .bigpic').find('img').attr('src',bigpic).attr('data-zoom',zoompic);
+                $('.pic_style1 .bigpic').animate({opacity:1});
+            });
+
+        });// //thumbnail pics
+
+        
+        // //detail tabs
+        $('.product_detail_style1 .title3').click(function(){
+            $(this).toggleClass('open');
+            $(this).closest('.item1').find('.paragraph1').slideToggle(200);
+            $(this).closest('.item1').find('.share_style2').slideToggle(200);
+        });// //detail tabs
+
+        $('.product_detail_style1 .like1 .icon').click(function () {
+            $(this).toggleClass('liked');
+        })
+
+        // zoom plugin
+        new Drift(document.querySelector('.drift-demo-trigger'), {
+            paneContainer: document.querySelector('.product_detail_style1'),
+            inlinePane: 900,
+            containInline: true,
+            hoverBoundingBox: true,
+            zoomFactor: 3,
+            inlineOffsetY: -85,
+        });
+
+
+            $('.box_style1 .quick_view .text').click(function(){
+                show_modal('.bg15');
+                modal_box('#popup_box15',$(this));
+            });
+            $(document.body).on('click','.modal_style15 .close_icon',function(){
+                hide_modal('.bg1');
+                $('.modal_style15').fadeOut();
+            });
+        // zoom plugin
+
+        });//end document ready
+    </script>
+
+    <!-- <script>
+            const imgs = document.querySelectorAll('.img-select a');
+            const imgBtns = [...imgs];
+            let imgId = 1;
+            imgBtns.forEach((imgItem) => {
+                imgItem.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    imgId = imgItem.dataset.id;
+                    slideImage();
+                });
+            });
+            function slideImage(){
+                const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+                document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+            }
+            window.addEventListener('resize', slideImage);
+        </script> -->
+     <!-- <script>
          $(function () {
              $(document.body).on('submit','.frm-cart-count',function (e) {
                  e.preventDefault();
@@ -1590,7 +1580,19 @@ imageZoom("picture" , "pictureOutput");
                  $(document.body).find('.gs-header').remove();
              },500);
          });
+     </script> -->
+     <script>
+         // hamburger menu
+        //  function hamMenu() {
+        //      var menu = document.getElementById("mobile-menu");
+        //      if (menu.style.display === "block") {
+        //          menu.style.display = "none";
+        //      } else {
+        //          menu.style.display = "block";
+        //      }
+        //  }
+
      </script>
-     
+ 
 </body>
 </html>
