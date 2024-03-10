@@ -353,6 +353,7 @@ a {
 }
 .main-body .main-side {
     padding: 5px 10px;
+    position: relative;
 }
 .main-body .main-side .top-part {
     border-bottom: 1px solid #dee2e6;

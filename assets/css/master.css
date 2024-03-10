@@ -52,7 +52,7 @@ img{ border:0 none;}
 .product_detail_style1 .drift-zoom-pane{
     position: absolute;
     width: 80%;
-    height: 0%;
+    height: 80%;
     z-index: 999;
 }
 .product_detail_style1 .item{
