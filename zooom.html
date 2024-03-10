@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css.css">
+
+    </head>
+    <body>
+        <section class="picture-container">
+            <div class="picture-div">
+                <img id="picture" src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_3.jpg" alt="">
+
+                <div class="thumbnails">
+                    <img class="thumbnail" style="width: 80px;" src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_1.jpg" alt="">
+                    <img class="thumbnail" style="width: 80px;" src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_2.jpg" alt="">
+                    <img class="thumbnail" style="width: 80px;" src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_4.jpg" alt="">
+                </div>
+            </div>
+
+
+            <div id="pictureOutput" class="img-zoom-result">
+                <div class="productInfo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, quasi.</p>
+
+                </div>
+            </div>
+
+        </section>
+
+        <script>
+        
+        thumbnails = document.querySelectorAll(".thumbnail"),
+        replacePicture = document.querySelector("#picture"),
+        currentPicture = document.querySelector(".picture-div"),
+        productInfo = document.querySelector(".productInfo")
+        thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener("click" ,()=>{
+            replacePicture.src = thumbnail.src;
+            output.style.backgroundImage = "url('" + thumbnail.src + "')";
+        });
+    
+    });
+
+
+    const imageZoom = (picID , outputID) => {
+        const moveLens = (e) => {
+            let pos, x, y;
+            e.preventDefault();
+
+
+            pos = getCursorPos(e);
+            
+            x = pos.x - (lens.offsetWidth / 2);
+            y = pos.y - (lens.offsetHeight / 2);
+            
+            
+            if( x > pic.Width - lens.offsetWidth) {
+                x = pic.Width - lens.offsetWidth  ;
+            }
+            if(x < 0) {
+                x = 0;
+            }
+            if( y > pic.height - lens.offsetHeight){
+                y = pic.height - lens.offsetHeight ;
+            }
+            if(y < 0) {
+                y = 0;
+            }
+            
+            lens.style.left = x + "px";
+            lens.style.top = y + "px";
+            
+            output.style.backgroundPosition = "-" + (x * x1) + "px -" + (y * y1)  + "px";
+            
+            output.style.backgroundSize = (pic.width * x1 )  + "px " + (pic.height * y1 )  + "px";
+            console.log(output.style.backgroundSize);
+
+        }
+        pic = document.getElementById(picID);
+        output = document.getElementById(outputID);
+
+        lens = document.createElement("DIV");
+        lens.setAttribute("class", "pic-zoom-lens");
+        pic.parentElement.insertBefore(lens,pic);
+
+        x1 = output.offsetWidth / lens.offsetWidth;
+        y1 = output.offsetHeight / lens.offsetHeight;
+
+
+        lens.addEventListener("mousemove", moveLens);
+        pic.addEventListener("mousemove",moveLens);
+
+        const getCursorPos=(e)=>{
+            let a, x=0 , y=0;
+            e=e || window.event;
+
+            a=pic.getBoundingClientRect();
+
+            x = e.pageX - a.left;
+            y = e.pageY - a.top;
+
+            x= x - window.scrollX;
+            y= y - window.scrollY;
+            return {x:x , y:y};
+        }
+
+        currentPicture.addEventListener("mouseenter" , ()=>{
+            lens.style.display = "block";
+            productInfo.style.display="none";
+            output.style.backgroundImage = "url('" + pic.src + "')";
+        });
+        currentPicture.addEventListener("mouseleave" , ()=>{
+            lens.style.display = "none";
+            productInfo.style.display="block";
+            output.style.backgroundImage = "url('')";
+        });
+
+    }
+
+    imageZoom("picture" , "pictureOutput");
+
+        </script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+        <!-- <script src="script.js"></script> -->
+    </body>
+</html>
