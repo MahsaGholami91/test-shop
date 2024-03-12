@@ -45,7 +45,7 @@ body{font-family:Roboto,'Open Sans',sans-serif}
 .mgh-slide .owl-nav .disabled{display:none}
 .mgh-slide .owl-prev,
 .mgh-slide .owl-next{
-	top:110px;
+	top:196px;
 	z-index:2;
 	width:40px;
 	height:40px;
@@ -57,5 +57,5 @@ body{font-family:Roboto,'Open Sans',sans-serif}
 	box-shadow:0 4px 4px rgba(0,0,0,.3),0 0 4px rgba(0,0,0,.2)
 }
 .mgh-slide .owl-prev{left:-10px}
-.mgh-slide .owl-next{right:-10px}
+.mgh-slide .owl-next{right:-20px}
 

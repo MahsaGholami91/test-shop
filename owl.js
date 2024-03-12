@@ -1,14 +1,18 @@
 $(function(){
 	$('.mgh-slide').owlCarousel({
 		nav:true,
-		//loop:true,
+		loop:true,
 		slideBy:'page',
 		rewind:false,
+		autoplay:true,
+		autoplayTimeout:1000,
+		autoplayHoverPause:true,
 		responsive:{
 			0:{items:1},
 			480:{items:2},
 			600:{items:3},
-			1000:{items:4.5}
+			1000:{items:4.5},
+			
 		},
 		smartSpeed:70,
 		onInitialized:function(e){

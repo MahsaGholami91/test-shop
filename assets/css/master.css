@@ -42,7 +42,7 @@ img{ border:0 none;}
     text-align: center;
     overflow: hidden;
     position: relative;
-    cursor: url("../../cursor_zoom.png") 40 40, pointer;
+    cursor: url("/images/cursor_zoom.png") 40 40, pointer;
     margin: 0 auto;
 }
 .pic_style1 .bigpic img {

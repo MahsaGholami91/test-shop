@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trendyol Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
     <script src="https://unpkg.com/js-image-zoom@0.4.1/js-image-zoom.js" type="application/javascript"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="owl.css">
-    <link rel="stylesheet" href="css.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <style type="text/css" class="drift-base-styles">
         @keyframes noop {
           0% { zoom: 1; }
@@ -59,132 +61,29 @@
     </style>               
     <link href="assets/css/master.css?v=1591956123" rel="stylesheet" type="text/css">
     <link href="assets/css/media.css?v=1591956123" rel="stylesheet" type="text/css">
-    
-    <!-- <style>
-        
-
-.mobile-container {
-    margin: auto;
-    background-color: #555;
-    color: white;
-    border-radius: 10px;
-    width: 100%;
-}
-
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
-}
-
-.topnav #myLinks {
-    display: none;
-}
-
-.topnav {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.topnav a.icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.topnav i {
-    cursor: pointer;
-}
-
-.menu-tab .active {
-    color: white;
-}
-
-.hidden {
-    display: none;
-}
-
-.mobile-hidden {
-    display: block;
-}
-
-.logo-mobile a {
-    color: #fff;
-}
-
-.mobile-menu {
-    text-align: center;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: #000000d9;
-    color: #fff;
-    width: 100%;
-    height: 100vh;
-    z-index: 99;
-    display: none;
-}
-
-.mobile-menu i {
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    color: red;
-    cursor: pointer;
-    font-size: 25px;
-}
-
-.mobile-menu li a {
-    color: #fff;
-    font-size: 24px;
-}
-
-.mobile-menu li {
-    color: #fff;
-    padding: 15px;
-}
-
-.mobile-menu ul {
-    padding: 30%
-}
-
-hr {
-    width: 5%;
-    color: gray;
-}
-
-    </style>
-       -->
+          
 
 </head>
 <body>
     <div class="container container-md">
         <div class="head">
-            <div class="">
+            <div class="banner">
                 <img src="images/web-product-detail-top-tr-TR-1709048761837-deprem.webp" alt="">
             </div>
-            <div class="border1">
-                <div class="d-flex flex-row-reverse ">
-                    <div class="p-2 "><a class="text-muted fs-8" href="google.com">Yardim</a></div>
-                    <div class="p-2 "><a class="text-muted fs-8" href="google.com">Hakkimiz</a></div>
-                    <div class="p-2 "><a class="text-muted fs-8" href="google.com">Satis</a></div>
-                    <div class="p-2 "><a class="text-muted fs-8" href="google.com">indrim</a></div>
+            <div class="border1 my-2">
+                <div class="d-none d-sm-block">
+                    <div class="sub_menu d-flex flex-row-reverse ">
+                        <div class="sub_menu1 p-2 "><a class="text-muted fs-8" href="google.com">Yardim</a></div>
+                        <div class="sub_menu2 p-2 "><a class="text-muted fs-8" href="google.com">Hakkimiz</a></div>
+                        <div class="sub_menu3 p-2 "><a class="text-muted fs-8" href="google.com">Satis</a></div>
+                        <div class="sub_menu4 p-2 "><a class="text-muted fs-8" href="google.com">indrim</a></div>
+                    </div>
                 </div>
-                <div class="header">
+                <div class="header my-2">
                     <div class="logo">
-                        <img class="v-img" src="images/ty-web.svg" alt="">
+                        <a href="trendyol.com">
+                            <img class="v-img" src="images/ty-web.svg" alt="">
+                        </a>
                     </div>
                     <div class="input-search">
                         <input type="text" class="form-control" placeholder="Search...">
@@ -192,244 +91,225 @@ hr {
                                 <span class="material-symbols-outlined fs-10">search </span>                        
                             </div>
                     </div>
-                    <div class="action-btn d-flex flex-row-reverse">
-                        <div class="p-2 d-flex align-items-end basket">
-                            <span class="material-symbols-outlined fs-10">shopping_cart </span>
-                            <span>sepetim</span>
-                        </div>
-                        <div class="p-2 d-flex align-items-end favorit">
-                            <span class="material-symbols-outlined">favorite </span>
-                            <span>favorit</span>
-                        </div>
-                        <div class="p-2 d-flex align-items-end sign-in"> 
-                            <span class="material-symbols-outlined"> person </span>
-                            <span>giris</span>
-                        </div>
-                    </div>
-                </div>
-            <!-- hamMenu -->
-            <!-- <div class="mobile-container hidden">
-                <div class="topnav">
-                    <div class="logo-mobile">
-                        <a href="index.html">V<span class="v-color">N</span>EWS</a>
-                    </div>
-                    <span onclick="hamMenu()" class="material-symbols-outlined">  menu  </span>
-                </div>
-            </div>
+                        <div class="d-none d-sm-block">
+                            <div class="action-btn d-flex flex-row-reverse">
+                                <div class="p-2 d-flex align-items-end basket">
+                                    <span class="material-symbols-outlined fs-10">shopping_cart </span>
+                                    <span>sepetim</span>
+                                </div>
+                                <div class="p-2 d-flex align-items-end favorit">
+                                    <span class="material-symbols-outlined">favorite </span>
+                                    <span>favorit</span>
+                                </div>
+                                <div class="p-2 d-flex align-items-end sign-in"> 
+                                    <span class="material-symbols-outlined"> person </span>
+                                    <span>giris</span>
+                                </div>
+                            </div>
 
-            <div id="mobile-menu" class="mobile-menu">
-                <span onclick="hamMenu()" class="material-symbols-outlined"> close </span>
-                <ul>
-                    <li class="main_menu">
-                        <a class="main_menu_text" href="index.html">Home</a>
-                    </li>
-                    <hr>
-                    <li class="main_menu">
-                        <a lass="main_menu_text" href="news.html">News</a>
-                    </li>
-                    <hr>
-                    <li class="main_menu">
-                        <a class="main_menu_text dropdown-btn" href="sitemap.html">Sitemap</a>
-                   </li>
-                </ul>
-            </div>
-            <div class="top-wide hidden-mobile">
-                <nav class="top">
-                    <div class="left">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="news.html">News</a></li>
-                            <li><a href="sitemap.html">Sitemap</a></li>
-                        </ul>
-                    </div>
-                    <div class="social">
-                        <ul>
-                            <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a> </li>
-                            <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
-                            <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            <div class="body">
-                <div class="logo hidden-mobile">
-                    <a href="index.html">V<span class="v-color">N</span>EWS</a>
+                        </div>
                 </div>
-                <div class="ads-banner">
-                    <img src="image/voice_banner.png" alt="">
-                </div>
-            </div> -->
-            <!-- Simulate a smartphone / tablet -->
-            <!-- <div class="bottom hidden-mobile">
-                <nav class="menu">
-                    <div class="left">
-                        <ul class="main_navigation">
-                            <li class="main_menu">
-                                <a class="main_menu_text" href="index.html">Home</a>
-                            </li>
-                            <li class="main_menu ">
-                                <a class="main_menu_text " href="news.html">News</a>
-                            </li>
-                            <li class="main_menu">
-                                <a lass="main_menu_text" href="sitemap.html">Sitemap</a>
-                            </li>
-
-                        </ul>
+                <!-- hamMenu -->
+                <div class="mobile-container d-block d-sm-none">
+                    <div class="topnav">
+                        <div class="logo-mobile">
+                            <div class="action-btn d-flex flex-row-reverse">
+                                <div class="p-2 d-flex align-items-center basket">
+                                    <span class="material-symbols-outlined fs-10">shopping_cart </span>
+                                    <span>sepetim</span>
+                                </div>
+                                <div class="p-2 d-flex align-items-center favorit">
+                                    <span class="material-symbols-outlined">favorite </span>
+                                    <span>favorit</span>
+                                </div>
+                                <div class="p-2 d-flex align-items-center sign-in"> 
+                                    <span class="material-symbols-outlined"> person </span>
+                                    <span>giris</span>
+                                </div>
+                            </div>
+                        </div>
+                        <span onclick="hamMenu()" class="cursor-pointer material-symbols-outlined">  menu  </span>
                     </div>
-                    <div class="searchbox">
-                        <form class="search-form" action="news.html" method="">
-                            <input class="search-input" name="s" size="20" type="text" value=""
-                                placeholder="Type here to search...">
-                            <button class="search-btn" type="submit">
-                                <i class="fa fa-search"></i>
+                </div>
+                <div id="mobile-menu" class="mobile-menu">
+                    <span onclick="hamMenu()" class=" material-symbols-outlined"> close </span>
 
+
+                    <ul class="accordion accordion-flush" id="accordionFlushExample">
+                        <li class="main_menu accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="main_menu_text accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              Kadin
                             </button>
-                        </form>
-                    </div>
-                </nav>
-            </div> -->
-    
-            <!-- hamMenu -->
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul class="submenu mt-1 ">
+                                    <li class=" nav-item1 my-3"><a class="nav-link1" href="#">Drop Down Menu</a></li>
+                                    <li class=" nav-item1 my-3"><a class="nav-link1" href="#">jQuery Plugin</a></li>
+                                    <li class=" nav-item1 my-3"><a class="nav-link1" href="#">Ajax Navigation</a></li>
+                                    <li class=" nav-item1 my-3"><a class="nav-link1" href="#">Drop Down Menu</a></li>
+                                    <li class=" nav-item1 my-3"><a class="nav-link1" href="#">jQuery Plugin</a></li>
+                                    <li class=" nav-item1 my-3"><a class="nav-link1" href="#">Ajax Navigation</a></li>
+                                    <li class=" nav-item1 my-3"><a class="nav-link1" href="#">Drop Down Menu</a></li>
+                                    <li class=" nav-item1 my-3"><a class="nav-link1" href="#">jQuery Plugin</a></li>
+                                    <li class=" nav-item1 my-3"><a class="nav-link1" href="#">Ajax Navigation</a></li>
+                                </ul>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="main_menu accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                              <button class="main_menu_text accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Erkek
+                              </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                  <ul class="submenu mt-1 ">
+                                      <li class=" nav-item1 my-3"><a class="nav-link1" href="#">Drop Down Menu</a></li>
+                                      <li class=" nav-item1 my-3"><a class="nav-link1" href="#">jQuery Plugin</a></li>
+                                      <li class=" nav-item1 my-3"><a class="nav-link1" href="#">Ajax Navigation</a></li>
+                                      <li class=" nav-item1 my-3"><a class="nav-link1" href="#">Drop Down Menu</a></li>
+                                      <li class=" nav-item1 my-3"><a class="nav-link1" href="#">jQuery Plugin</a></li>
+                                      <li class=" nav-item1 my-3"><a class="nav-link1" href="#">Ajax Navigation</a></li>
+                                      <li class=" nav-item1 my-3"><a class="nav-link1" href="#">Drop Down Menu</a></li>
+                                      <li class=" nav-item1 my-3"><a class="nav-link1" href="#">jQuery Plugin</a></li>
+                                      <li class=" nav-item1 my-3"><a class="nav-link1" href="#">Ajax Navigation</a></li>
+                                  </ul>
+                              </div>
+                            </div>
+                        </li>
+                        <li class="main_menu accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                              <button class="main_menu_text accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Cocuk
+                              </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                  <ul class="submenu mt-1 ">
+                                      <li class=" nav-item1 my-3"><a class="nav-link1" href="#">nothing</a></li>
+                                      
+                                  </ul>
+                              </div>
+                            </div>
+                        </li>
+                    </ul>                          
+                        
+                        
+                </div>
+                <!-- hamMenu -->
 
 
-                <div class="row ">
+                <div class="row d-none d-sm-block">
                     
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link  fs-10" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Kadın</a>
-                            <ul class="submenu mt-1 p-3">
-                                <li class="nav-item1"><a class="nav-link1 text-muted" href="#">Drop Down Menu</a></li>
-                                <li class="nav-item1"><a class="nav-link1 text-muted" href="#">jQuery Plugin</a></li>
-                                <li class="nav-item1"><a class="nav-link1 text-muted" href="#">Ajax Navigation</a></li>
-                                <li class="nav-item1"><a class="nav-link1 text-muted" href="#">Drop Down Menu</a></li>
-                                <li class="nav-item1"><a class="nav-link1 text-muted" href="#">jQuery Plugin</a></li>
-                                <li class="nav-item1"><a class="nav-link1 text-muted" href="#">Ajax Navigation</a></li>
-                                <li class="nav-item1"><a class="nav-link1 text-muted" href="#">Drop Down Menu</a></li>
-                                <li class="nav-item1"><a class="nav-link1 text-muted" href="#">jQuery Plugin</a></li>
-                                <li class="nav-item1"><a class="nav-link1 text-muted" href="#">Ajax Navigation</a></li>
+                            <ul class="submenu p-3 mt-1 ">
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Drop Down Menu</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">jQuery Plugin</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Ajax Navigation</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Drop Down Menu</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">jQuery Plugin</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Ajax Navigation</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Drop Down Menu</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">jQuery Plugin</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Ajax Navigation</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fs-10" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Erkek</a>
-                            <ul class="submenu mt-1 p-3">
-                                <li class="nav-item1"><a class="nav-link1" href="#">Drop</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Plugin</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Navigation</a></li>
+                            <ul class="submenu p-3 mt-1 ">
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Drop</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Plugin</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Navigation</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Anne & Çocuk</a>
-                        <ul class="submenu mt-1 p-3">
-                            <li class="nav-item1"><a class="nav-link1" href="#">Drop</a></li>
-                            <li class="nav-item1"><a class="nav-link1" href="#">Plugin</a></li>
-                            <li class="nav-item1"><a class="nav-link1" href="#">Navigation</a></li>
+                        <ul class="submenu p-3 mt-1 ">
+                            <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Drop</a></li>
+                            <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Plugin</a></li>
+                            <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Navigation</a></li>
                         </ul>
                         </li>
                         <li class=" nav-item">
                             <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Ev & Yaşam</a>
-                            <ul class="submenu mt-1 p-3">
-                                <li class="nav-item1"><a class="nav-link1" href="#">Drop Down Menu</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">jQuery Plugin</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Ajax Navigation</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Drop Down Menu</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">jQuery Plugin</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Ajax Navigation</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Drop Down Menu</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">jQuery Plugin</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Ajax Navigation</a></li>
+                            <ul class="submenu p-3 mt-1 ">
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Drop Down Menu</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">jQuery Plugin</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Ajax Navigation</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Drop Down Menu</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">jQuery Plugin</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Ajax Navigation</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Drop Down Menu</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">jQuery Plugin</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Ajax Navigation</a></li>
                             </ul>
                         </li>
                         <li class=" nav-item">
                             <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Süpermarket</a>
-                            <ul class="submenu mt-1 p-3">
-                                <li class="nav-item1"><a class="nav-link1" href="#">Drop Down Menu</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">jQuery Plugin</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Ajax Navigation</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Drop Down Menu</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">jQuery Plugin</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Ajax Navigation</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Drop Down Menu</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">jQuery Plugin</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Ajax Navigation</a></li>
+                            <ul class="submenu p-3 mt-1 ">
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Drop Down Menu</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">jQuery Plugin</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Ajax Navigation</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Drop Down Menu</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">jQuery Plugin</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Ajax Navigation</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Drop Down Menu</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">jQuery Plugin</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Ajax Navigation</a></li>
                             </ul>
                         </li>
                         <li class=" nav-item">
                             <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Kozmetik</a>
-                            <ul class="submenu mt-1 p-3">
-                                <li class="nav-item1"><a class="nav-link1" href="#">Drop Down Menu</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">jQuery Plugin</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Ajax Navigation</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Drop Down Menu</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">jQuery Plugin</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Ajax Navigation</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Drop Down Menu</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">jQuery Plugin</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Ajax Navigation</a></li>
+                            <ul class="submenu p-3 mt-1 ">
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Drop Down Menu</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">jQuery Plugin</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Ajax Navigation</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Drop Down Menu</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">jQuery Plugin</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Ajax Navigation</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Drop Down Menu</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">jQuery Plugin</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Ajax Navigation</a></li>
                             </ul>
                         </li>
                         <li class=" nav-item">
                             <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Ayakkabı & Çanta</a>
-                            <ul class="submenu mt-1 p-3">
-                                <li class="nav-item1"><a class="nav-link1" href="#">Drop Down Menu</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">jQuery Plugin</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Ajax Navigation</a></li>
+                            <ul class="submenu p-3 mt-1 ">
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Drop Down Menu</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">jQuery Plugin</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Ajax Navigation</a></li>
                               
-                                <li class="nav-item1"><a class="nav-link1" href="#">Drop Down Menu</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">jQuery Plugin</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Ajax Navigation</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Drop Down Menu</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">jQuery Plugin</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Ajax Navigation</a></li>
                             </ul>
                         </li>
                         <li class=" nav-item">
                             <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Elektronik</a>
-                            <ul class="submenu mt-1 p-3">
+                            <ul class="submenu p-3 mt-1 ">
                                
-                                <li class="nav-item1"><a class="nav-link1" href="#">jQuery Plugin</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Ajax Navigation</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Drop Down Menu</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">jQuery Plugin</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Ajax Navigation</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">jQuery Plugin</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Ajax Navigation</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Drop Down Menu</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">jQuery Plugin</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Ajax Navigation</a></li>
                             </ul>
                         </li>
                         <li class=" nav-item">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Spor&Outdoor</a>
-                            <ul class="submenu mt-1 p-3">
-                                <li class="nav-item1"><a class="nav-link1" href="#">Drop Down Menu</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">jQuery Plugin</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Drop Down Menu</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">jQuery Plugin</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Ajax Navigation</a></li>
+                            <a class="nav-link " id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Spor&Outdoor</a>
+                            <ul class="submenu p-3 mt-1 ">
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Drop Down Menu</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">jQuery Plugin</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Drop Down Menu</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">jQuery Plugin</a></li>
+                                <li class=" nav-item1 my-3"><a class="nav-link1 text-muted" href="#">Ajax Navigation</a></li>
                             </ul>
                         </li>
-                        <li class=" nav-item">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Çok Satanlar</a>
-                            <ul class="submenu mt-1 p-3">
-                                <li class="nav-item1"><a class="nav-link1" href="#">Drop Down Menu</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">jQuery Plugin</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Ajax Navigation</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Drop Down Menu</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">jQuery Plugin</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Ajax Navigation</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Drop Down Menu</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">jQuery Plugin</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Ajax Navigation</a></li>
-                            </ul>
-                        </li>
-                        <li class=" nav-item">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Flaş Ürünler</a>
-                            <ul class="submenu mt-1 p-3">
-                                <li class="nav-item1"><a class="nav-link1" href="#">Drop Down Menu</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">jQuery Plugin</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Ajax Navigation</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Drop Down Menu</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">jQuery Plugin</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Ajax Navigation</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Drop Down Menu</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">jQuery Plugin</a></li>
-                                <li class="nav-item1"><a class="nav-link1" href="#">Ajax Navigation</a></li>
-                            </ul>
-                        </li>
-
                     </ul>
                     
                   
@@ -449,9 +329,8 @@ hr {
         </div>
         <!-- main body -->
         <div class="main-body">
-            <div class="row">
-                <div class="left-side col-md-4 col-sm-12 col-lg-4">
-
+            <div class="row res-main-body">
+                <div class="left-side col-md-6 col-sm-6 col-lg-4">
                     <section class="product_detail_part1">
                         <div class="container-zoom">
                             <div class="inner clearfix">
@@ -460,7 +339,6 @@ hr {
                                         <div class="bigpic">
                                             <img class="drift-demo-trigger" src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_3.jpg" alt="" data-zoom="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_3.jpg">
                                         </div>
-                                        
                                         <div class="thumb_part clearfix">
                                             <div class="pic active">
                                                 <img src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_1.jpg" alt="" data-bigpic-url="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_1.jpg" data-zoompic-url="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_1.jpg">
@@ -477,10 +355,8 @@ hr {
                             </div>
                         </div>
                     </section>                     
-                </div>
-
-             
-                <div class="main-side col-md-5 col-sm-12 .col-lg-5">
+                </div>            
+                <div class="main-side col-md-6 col-sm-6 col-lg-5">
                     <div class="product_detail_style1 top-part d-flex flex-column">
                         <div class="part1 d-flex flex-row ">
                             <div class="sign-block">
@@ -500,15 +376,18 @@ hr {
                             </h3>
                         </div>
                         <div class="part3 d-flex flex-row">
-                            <div class="text-bold">4.5</div>
-                            <div class="score-stars d-flex flex-row">
-                                <span class="material-symbols-outlined">star</span>                            
-                                <span class="material-symbols-outlined">star</span>                            
-                                <span class="material-symbols-outlined">star</span>                            
-                                <span class="material-symbols-outlined">star</span>                            
-                                <span class="material-symbols-outlined">star</span>                            
+                            <div class="d-flex flex-row">
+                                <div class="text-bold">4.5</div>
+                                <div class="score-stars d-flex flex-row">
+                                    <span class="material-symbols-outlined">star</span>                            
+                                    <span class="material-symbols-outlined">star</span>                            
+                                    <span class="material-symbols-outlined">star</span>                            
+                                    <span class="material-symbols-outlined">star</span>                            
+                                    <span class="material-symbols-outlined">star</span>                            
+                                </div>
+
                             </div>
-                            <div class="divider-dot text-muted">.</div>
+                            <div class="hide-in-mobile divider-dot text-muted">.</div>
                             <div class="is-photo text-muted">
                                 <a class="text-style d-flex flex-row" href="">
                                     <span class="people-count">19098</span>
@@ -516,19 +395,19 @@ hr {
                                     <span class="camera-icon material-symbols-outlined"> photo_camera </span>
                                 </a>
                             </div>
-                            <div class="divider-dot text-muted">.</div>
+                            <div class="hide-in-mobile divider-dot text-muted">.</div>
                             <div class="is-qus text-muted">
                                 <a class="text-style d-flex flex-row" href="">
                                     <span class="people-count">19098</span>
                                     <span >soru & cevab</span>
                                 </a>
                             </div>
-                            <div class="divider-dot text-muted">.</div>
+                            <div class="hide-in-mobile divider-dot text-muted">.</div>
                             <div class="is-favorit text-muted">
                                 <a class="text-style d-flex flex-row" href="">
-                                    <span class="heart-icon material-symbols-outlined">favorite</span>
                                     <span class="people-count">19098</span>
                                     <span>Favori</span>
+                                    <span class="heart-icon material-symbols-outlined">favorite</span>
                                 </a>
                             </div>
                         </div>
@@ -552,9 +431,92 @@ hr {
                         <div class="part1 d-flex flex-row">
                             <div class="btn-addToCard col-10"> Sepete Ekle </div>
                             <div>
-                                <div class="btn-addToFavorite col-2">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn-addToFavorite col-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                     <span class="material-symbols-outlined"> favorite </span>
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="staticBackdropLabel">Collagen Life</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="bigpic">
+                                                    <img class="drift-demo-trigger" src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_3.jpg" alt="" data-zoom="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_3.jpg">
+                                                </div>
+                                                <div class="part2 d-flex flex-row">
+                                                    <h3>
+                                                        <a class="product-name" href="">Collagen Life</a>
+                                                        <span class="product-text  text-secondary">Kampanya fiyatından satılmak üzere </span>
+                                                    </h3>
+                                                </div>
+                                                <div class="part3 d-flex flex-column">
+                                                    <div class="d-flex flex-row">
+                                                        <div class="text-bold text-secondary">4.5</div>
+                                                        <div class="score-stars d-flex flex-row">
+                                                            <span class="material-symbols-outlined text-secondary">star</span>                            
+                                                            <span class="material-symbols-outlined text-secondary">star</span>                            
+                                                            <span class="material-symbols-outlined text-secondary">star</span>                            
+                                                            <span class="material-symbols-outlined text-secondary">star</span>                            
+                                                            <span class="material-symbols-outlined text-secondary">star</span>                            
+                                                        </div>
+                        
+                                                    </div>
+                                                    <div class="hide-in-mobile divider-dot text-muted">.</div>
+                                                    <div class="is-photo text-muted">
+                                                        <a class="text-style d-flex flex-row" href="">
+                                                            <span class=" text-secondary people-count">19098</span>
+                                                            <span class=" text-secondary">Degrlendirme</span>
+                                                            <span class=" text-secondary camera-icon material-symbols-outlined"> photo_camera </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="hide-in-mobile divider-dot text-muted">.</div>
+                                                    <div class="is-qus text-muted">
+                                                        <a class="text-style d-flex flex-row" href="">
+                                                            <span class=" text-secondary people-count">19098</span>
+                                                            <span class=" text-secondary">soru & cevab</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="hide-in-mobile divider-dot text-muted">.</div>
+                                                    <div class="is-favorit text-muted">
+                                                        <a class="text-style d-flex flex-row" href="">
+                                                            <span class=" text-secondary people-count">19098</span>
+                                                            <span class=" text-secondary">Favori</span>
+                                                            <span class=" text-secondary heart-icon material-symbols-outlined">favorite</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="part4 d-flex flex-row">
+                                                    <div class="main-price">
+                                                        <span>168,99</span>
+                                                        <span>TL</span>
+                                                    </div>
+                                                    <div class="per-product">
+                                                        <span>(</span>
+                                                        <span>1,89</span>
+                                                        <span>TL</span>
+                                                        <span>/</span>
+                                                        <span>tablet</span>
+                                                        <span>)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Understood</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+
+
+                                <!-- <div class="btn-addToFavorite col-2">
+                                    <span class="material-symbols-outlined"> favorite </span>
+                                </div> -->
                             </div>
                         </div>
                         <div class="part2 d-flex flex-row">
@@ -649,8 +611,7 @@ hr {
                     </div>
 
                 </div>
-
-                <div class="right-side col-md-3 col-sm-12 .col-lg-3">
+                <div class="right-side col-md-12 col-sm-12 col-lg-12">
                     <h6 class="text-muted">ÜRÜNÜN KAMPANYALARI</h6>   
                     <div class="d-flex flex-row box1">
                         <div class="box1-1">
@@ -733,7 +694,7 @@ hr {
         <!-- main body -->
 
         <!-- owl -->
-        <div class="">
+        <div class="slider my-3">
             <div>
                 <h5>Benzer Ürünler</h5>
             </div>
@@ -1356,23 +1317,22 @@ hr {
             </div>
         </div>
         <!-- owl -->
-        
     </div>
 
     <section class="footer">
         <div class="container">
-            <div class="row">
-                <div class="part1 col-md-3 d-flex flex-column col-sm-12 text-sm-center">
+            <div class="row footer-design ">
+                <div class="part1 col-md-3 col-sm-5 col-5 ">
                     <div class="first d-flex flex-column">
                         <div class="title">Trendyol</div>
                         <div class="list d-flex flex-column">
-                            <span>Biz Kimiz</span>
-                            <span>Kimiz</span>
-                            <span>Biz</span>
-                            <span>Biz Kimiz</span>
+                            <a class="text-secondary" href="">Biz Kimiz</a>
+                            <a class="text-secondary" href="">Kimiz</a>
+                            <a class="text-secondary" href="">Biz Kimiz</a>
+                            <a class="text-secondary" href="">Biz Kimiz</a>
                         </div>
                     </div>
-                    <div class="second">
+                    <div class="second d-flex flex-column">
                         <div class="title">Guvenli</div>
                         <div class="guvenli d-flex flex-row">
                             <div class="visa"><img src="images/troy-logo-transparent.webp" alt=""></div>
@@ -1382,78 +1342,85 @@ hr {
                         </div>
                     </div>
                 </div>
-                <div class="part2 col-md-3 col-sm-12 text-sm-center">
-                    <div class="first d-flex flex-column">
-                        <div class="title">About Us</div>
-                        <div class="list d-flex flex-column">
-                            <span>Biz Kimiz</span>
-                            <span>Kimiz</span>
-                            <span>Biz</span>
-                            <span>Biz Kimiz</span>
-                        </div>
-                    </div>
-                    <div class="second">
-                        <div class="title">Guvenli</div>
-                        <div class="guvenli d-flex flex-row">
-                            <div class="visa"><img src="images/footer-visa-black.webp" alt=""></div>
-                            <div class="visa1"><img src="images/footer-visa-black.webp" alt=""></div>
-                            <div class="visa2"><img src="images/footer-visa-black.webp" alt=""></div>
-                            <div class="visa3"><img src="images/footer-visa-black.webp" alt=""></div>
-                        </div>
-                    </div>
-    
-                </div>
-                <div class="part3  col-md-3 col-sm-12 text-sm-center">
+                <div class="part3 col-md-3 col-sm-5 col-5">
                     <div class="first d-flex flex-column">
                         <div class="title">Kampanya</div>
                         <div class="list d-flex flex-column">
-                            <span>Biz Kimiz</span>
-                            <span>Kimiz</span>
-                            <span>Biz</span>
-                            <span>Biz Kimiz</span>
+                            <a class="text-secondary" href="">Biz Kimiz</a>
+                            <a class="text-secondary" href="">Kimiz</a>
+                            <a class="text-secondary" href="">Biz Kimiz</a>
+                            <a class="text-secondary" href="">Biz Kimiz</a>
                         </div>
                     </div>
-                    <div class="second">
-                        <div class="title">Guvenli</div>
-                        <div class="guvenli d-flex flex-row">
-                            <div class="visa"><img src="images/footer-visa-black.webp" alt=""></div>
-                            <div class="visa1"><img src="images/footer-visa-black.webp" alt=""></div>
-                            <div class="visa2"><img src="images/footer-visa-black.webp" alt=""></div>
-                            <div class="visa3"><img src="images/footer-visa-black.webp" alt=""></div>
+                    <div class="second d-flex flex-column">
+                        <div class="title">Spcial Media</div>
+                        <div class="social-media d-flex flex-row">
+                            <a class="facebook" href="">
+
+                            </a>
+                            <a class="instagram" href=""></a>
+                            <a class="twitter" href=""></a>
+                            <a class="youtube" href="">
+                        
+                            </a>
                         </div>
-                    </div>    
+                    </div>  
                 </div>
-                <div class="part4  col-md-3 col-sm-12 text-sm-center">
+                <div class="part2 col-md-3 col-sm-5 col-5">
+                        <div class="first d-flex flex-column">
+                        <div class="title">About Us</div>
+                        <div class="list d-flex flex-column">
+                            <a class="text-secondary" href="">Biz Kimiz</a>
+                            <a class="text-secondary" href="">Kimiz</a>
+                            <a class="text-secondary" href="">Biz Kimiz</a>
+                            <a class="text-secondary" href="">Biz Kimiz</a>
+                        </div>
+                    </div>
+                    <div class="second d-flex flex-column">
+                        <div class="title">Mobile App</div>
+                        <div class="mobile-app d-flex flex-column">
+                            <a class="app-store" href=""></a>
+                            <a class="google-play" href=""></a>
+                            <a class="app-gallery" href=""></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="part4 col-md-3 col-sm-5 col-5">
                     <div class="first d-flex flex-column">
                         <div class="title">Yardim</div>
                         <div class="list d-flex flex-column">
-                            <span>Biz Kimiz</span>
-                            <span>Kimiz</span>
-                            <span>Biz</span>
-                            <span>Biz Kimiz</span>
+                            <a class="text-secondary" href="">Biz Kimiz</a>
+                            <a class="text-secondary" href="">Kimiz</a>
+                            <a class="text-secondary" href="">Biz Kimiz</a>
+                            <a class="text-secondary" href="">Biz Kimiz</a>
                         </div>
                     </div>
-                    <div class="second">
-                        <div class="title">Guvenli</div>
-                        <div class="guvenli d-flex flex-row">
-                            <div class="visa"><img src="images/footer-visa-black.webp" alt=""></div>
-                            <div class="visa1"><img src="images/footer-visa-black.webp" alt=""></div>
-                            <div class="visa2"><img src="images/footer-visa-black.webp" alt=""></div>
-                            <div class="visa3"><img src="images/footer-visa-black.webp" alt=""></div>
+                    <div class="second d-flex flex-column">
+                        <div class="title">ulke</div>
+                        <div class="barcode d-flex flex-row">
+                            <a href="">
+                                <img src="images/etbis-qr.webp" alt="">
+                            </a>
                         </div>
-                    </div>    
+                    </div>     
                 </div>
 
             </div>
         </div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top 
+                <span class="material-symbols-outlined">  arrow_upward  </span>
+            </button>
+            
+
     </section>
+    
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="owl.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
         var timeout    = 500;
@@ -1483,7 +1450,9 @@ hr {
         document.onclick = jsddm_close;
     </script>
 
-
+<script>
+    // $('.collapse').collapse('#q');
+</script>
      <script src="assets/js/master.js" type="text/javascript"></script> 
      <link href="assets/css/animate.css" rel="stylesheet" type="text/css"> 
      <script src="assets/plugin/ellipsis/jquery.dotdotdot.min.js" type="text/javascript"></script> 
@@ -1552,47 +1521,45 @@ hr {
 
         });//end document ready
     </script>
-
-    <!-- <script>
-            const imgs = document.querySelectorAll('.img-select a');
-            const imgBtns = [...imgs];
-            let imgId = 1;
-            imgBtns.forEach((imgItem) => {
-                imgItem.addEventListener('click', (event) => {
-                    event.preventDefault();
-                    imgId = imgItem.dataset.id;
-                    slideImage();
-                });
-            });
-            function slideImage(){
-                const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
-                document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
-            }
-            window.addEventListener('resize', slideImage);
-        </script> -->
-     <!-- <script>
-         $(function () {
-             $(document.body).on('submit','.frm-cart-count',function (e) {
-                 e.preventDefault();
-             });
-             setTimeout(function () {
-                 $(document.body).find('.gs-us__link').remove();
-                 $(document.body).find('.gs-header').remove();
-             },500);
-         });
-     </script> -->
+    <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    
      <script>
          // hamburger menu
-        //  function hamMenu() {
-        //      var menu = document.getElementById("mobile-menu");
-        //      if (menu.style.display === "block") {
-        //          menu.style.display = "none";
-        //      } else {
-        //          menu.style.display = "block";
-        //      }
-        //  }
+         function hamMenu() {
+             var menu = document.getElementById("mobile-menu");
+             if (menu.style.display === "block") {
+                 menu.style.display = "none";
+             } else {
+                 menu.style.display = "block";
+             }
+         }
 
      </script>
  
 </body>
 </html>
+
+
+
+
+  
